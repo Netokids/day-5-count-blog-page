@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="blog.html" class="list-active">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input id="input-blog-title" />
+            </div>
+            <div>
+              <div>
+                <label>Start</label>
+                <label style="margin-left: 209px;">End</label>
+              </div>
+              <div>
+                <input id="std" type="date" style="width: 49.5% ;"/>
+                <input id="etd" type="date" style="width: 49.5% ;"/>
+              </div>
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <div class="orait">
+              <div style="margin-bottom: 20px;">
+                <label>Technologies</label>
+              </div>
+              <div>
+                <input id="node" type="checkbox" name="node1" value="Node Js" class="inputan"/> Node JS
+                <input id="next" type="checkbox" name="next1" value="Next Js" class="inputan" style="margin-left: 100px;"/> Next JS
+              </div>
+              <div>
+                <input id="react" type="checkbox" name="react1" value="React Js" class="inputan"/> React JS
+                <input id="typescript" type="checkbox" name="text" value="Typescript" class="inputan" style="margin-left: 96px;"/> TYPESCRIPT 
+              </div>
+            </div>
+              
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                  <img src="img/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="line" />
+      <h1 class="haha">My Project</h1>
+      <div id="contents" class="blog-list">        
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="img/test1.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >Onepiece 3</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              durasi 3 jam
+            </div>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+              ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit 
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum." 
+            </p>
+            <div id="paragraph"></div>
+            <div class="sosmed-list">
+              <a href="https://www.linkedin.com/in/dion-novalino-54b859214/"
+                ><img src="img/linked.png" alt="facebook" target="_blank"
+              /></a>
+              <a href="https://www.instagram.com/dionnovalino/"
+                ><img style="width: 50px;" src="img/instagram.png" alt="twitter" target="_blank"
+              /></a>
+              <a href="https://www.facebook.com/dion.novalino"
+                ><img style="width: 35px;" src="img/facebook.png" alt="instagram" target="_blank"
+              /></a>
+              <a href="https://twitter.com/netikids"
+                ><img style="width: 35px; margin-left: 8px;" src="img/twitter.png" alt="mail" target="_blank"
+              /></a>
+            </div>
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+          </div>
+        </div>
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="img/test.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >Onepiece 2</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              Durasi 2 jam
+            </div>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+              ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit 
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum." 
+            </p>
+            <div id="paragraph"></div>
+            <div class="sosmed-list">
+              <a href="https://www.linkedin.com/in/dion-novalino-54b859214/"
+                ><img src="img/linked.png" alt="facebook" target="_blank"
+              /></a>
+              <a href="https://www.instagram.com/dionnovalino/"
+                ><img style="width: 50px;" src="img/instagram.png" alt="twitter" target="_blank"
+              /></a>
+              <a href="https://www.facebook.com/dion.novalino"
+                ><img style="width: 35px;" src="img/facebook.png" alt="instagram" target="_blank"
+              /></a>
+              <a href="https://twitter.com/netikids"
+                ><img style="width: 35px; margin-left: 8px;" src="img/twitter.png" alt="mail" target="_blank"
+              /></a>
+            </div>
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+          </div>
+        </div>
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="img/test2.jpg" alt="" />
+          </div>
+          <div class="blog-content">
+            
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >Onepiece</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              Durasi 1 jam
+            </div>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+              ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit 
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum." 
+            </p>
+            <div id="paragraph"></div>
+            <div class="sosmed-list">
+              <a href="https://www.linkedin.com/in/dion-novalino-54b859214/"
+                ><img src="img/linked.png" alt="facebook" target="_blank"
+              /></a>
+              <a href="https://www.instagram.com/dionnovalino/"
+                ><img style="width: 50px;" src="img/instagram.png" alt="twitter" target="_blank"
+              /></a>
+              <a href="https://www.facebook.com/dion.novalino"
+                ><img style="width: 35px;" src="img/facebook.png" alt="instagram" target="_blank"
+              /></a>
+              <a href="https://twitter.com/netikids"
+                ><img style="width: 35px; margin-left: 8px;" src="img/twitter.png" alt="mail" target="_blank"
+              /></a>
+            </div>
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="blog.js"></script>
+  </body>
+</html>

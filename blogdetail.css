@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body{
+    background-color: rgb(232, 232, 232);
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    background: #f2f2f2;
+    height: 7vh;
+  }
+  
+  nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+  }
+  
+  nav div.left-side {
+    padding-left: 90px;
+  }
+  
+  nav div.right-side {
+    padding-right: 90px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin-left: 40px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 40px;
+  }
+  
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  nav ul li a.list-active {
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  nav .right-side a {
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+/* Blog Detail */
+
+.blog-detail{
+    align-items: center;
+}
+
+.blog-detail .blog-detail-container{
+ 
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.test {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    margin-top: 50px;
+    }
+.test .left-items{
+    flex: 55%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.test .left-items .img1{
+    width: 65%;
+}
+
+.test .right-item{
+    flex: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.test .right-item .content{
+    width: 400px;
+
+}
+
+.test .right-item .content h2{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.test .right-item .content .img2{
+    width: 300px;
+    padding-right: 8px;
+}
+
+.test .right-item .content .img2{
+    width: 300px;
+    padding-right: 8px;
+}
+
+.test .right-item .content .clock{
+    width: 300px;
+    padding-right: 154px;
+}
+
+
+.test .right-item .content .categories1{
+    width: 300px;
+    padding-right: 17px;
+    margin-top: 20px;
+}
+.test .right-item .content .categories2{
+    width: 300px;
+    padding-right: 26px;
+    margin-top: 20px;
+}
+
+.paragraf{
+    width: 100%;
+}
+
+.paragraf .posisi{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 274px ;
+}
+
+.paragraf .posisi .pas{
+    text-align: justify;
+    padding-top: 20px;
+}
